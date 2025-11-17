@@ -1,0 +1,31 @@
+{
+  "name": "youtube-audio-extractor-api",
+  "version": "1.0.0",
+  "description": "Node.js API for extracting and cleaning audio from YouTube videos",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node src/test.js",
+    "check": "node check-dependencies.js",
+    "prestart": "node check-dependencies.js"
+  },
+  "keywords": [
+    "youtube",
+    "audio",
+    "extraction",
+    "ffmpeg",
+    "yt-dlp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "youtube-dl-exec": "^2.4.7",
+    "fluent-ffmpeg": "^2.1.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {}
+}
