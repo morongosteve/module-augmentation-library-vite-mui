@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React Native
+.expo/
+.expo-shared/
+web-build/
+
+# iOS
+ios/build/
+ios/Pods/
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcworkspace/xcshareddata/
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/xcshareddata/
+ios/Podfile.lock
+
+# Android
+android/build/
+android/.gradle/
+android/app/build/
+android/local.properties
+
+# ML Models (large files)
+*.gguf
+*.mlmodel
+*.mlmodelc
+*.mlpackage
+
+# Storage
+models/
+*.bin
+
+# Metro
+.metro-health-check*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Debugging
+*.log
+*.hprof
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo

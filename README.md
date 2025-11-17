@@ -1,18 +1,60 @@
 # Module augmentation with: TypeScript + Vite + Material UI (MUI v5)
 
-An example of module augmentation working as a library of components with mui v5. 
+An example of module augmentation working as a library of components with mui v5.
 
 Use this example with:
 
 - https://github.com/gerardparareda/module-augmentation-app-vite-mui
 
-## How to use
+## Projects
+
+This repository contains two projects:
+
+1. **Web Library** (root directory) - Vite + MUI component library with TypeScript module augmentation
+2. **Mobile App** (`/mobile`) - React Native app with iOS ML integration (Core ML + llama.rn)
+
+## Web Library - How to use
 
 1. Download the project
 2. Install `npm install`
 3. Build the project `npx vite build`
 
 You can now install the components library somewhere else.
+
+## Mobile App - iOS ML Integration
+
+The mobile app demonstrates on-device Machine Learning capabilities for iOS:
+
+- Run LLMs directly on iPhone with llama.rn
+- Native Core ML integration with Apple Neural Engine optimization
+- Pre-configured models (Llama 3.2, Phi-3, Gemma, etc.)
+- React hooks for easy ML integration
+
+### Quick Start (Mobile)
+
+```bash
+cd mobile
+npm install
+npm run pod-install
+npm run ios
+```
+
+See the [Mobile README](./mobile/README.md) for complete documentation.
+
+### Key Features
+
+- **On-Device Inference**: All processing happens locally on your iPhone
+- **Privacy First**: No data sent to cloud servers
+- **Offline Capable**: Works without internet connection
+- **Neural Engine**: Leverages Apple's ML accelerators (A14+ chips)
+- **Multiple Model Formats**: GGUF (llama.rn) and Core ML support
+
+### Documentation
+
+- [Mobile App Setup](./mobile/README.md)
+- [iOS ML Configuration](./mobile/docs/iOS-SETUP.md)
+- [Model Conversion Guide](./mobile/docs/MODEL-CONVERSION.md)
+- [Example Components](./mobile/src/components/MLChatExample.tsx)
 
 ## How does it work
 ### In the components library
