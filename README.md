@@ -8,10 +8,11 @@ Use this example with:
 
 ## Projects
 
-This repository contains two projects:
+This repository contains three projects:
 
 1. **Web Library** (root directory) - Vite + MUI component library with TypeScript module augmentation
 2. **Mobile App** (`/mobile`) - React Native app with iOS ML integration (Core ML + llama.rn)
+3. **Gradio ML Interface** (`/gradio-app`) - Web-based model testing environment
 
 ## Web Library - How to use
 
@@ -55,6 +56,35 @@ See the [Mobile README](./mobile/README.md) for complete documentation.
 - [iOS ML Configuration](./mobile/docs/iOS-SETUP.md)
 - [Model Conversion Guide](./mobile/docs/MODEL-CONVERSION.md)
 - [Example Components](./mobile/src/components/MLChatExample.tsx)
+
+## Gradio ML Testing Interface
+
+Before deploying models to iOS, test them on your desktop with our Gradio web interface:
+
+- **Test models** from Hugging Face in your browser
+- **Evaluate quality** before iOS deployment
+- **Compare models** side-by-side
+- **Find optimal settings** (temperature, tokens, etc.)
+
+### Quick Start (Gradio)
+
+```bash
+cd gradio-app
+pip install -r requirements.txt
+python app.py
+```
+
+Then open: http://127.0.0.1:7860
+
+### Features
+
+- **Model Management**: Load models from Hugging Face with one click
+- **Chat Interface**: Test conversational AI
+- **Text Generation**: Try prompts and see outputs
+- **4-bit Quantization**: Test memory-optimized versions
+- **Device Detection**: Automatically uses GPU/Neural Engine
+
+See the [Gradio Quick Start Guide](./gradio-app/QUICKSTART.md) for a 5-minute setup tutorial.
 
 ## How does it work
 ### In the components library
